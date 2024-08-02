@@ -35,11 +35,39 @@
         .nav-item ul li{
             display: inline;
             margin: 15px;
+            position: relative;
+            font-weight: 700;
         }
 
         .nav-item ul li a{
             color: #090909;
             text-decoration: none;
+        }
+
+        .nav-item ul li :hover{
+            color: #6482AD;
+        }
+
+        .navbar a::after{
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 0;
+        bottom: -10px;
+        left: 50%;
+        background-color: #6482AD;
+        transition: width 0.8 ease;
+        transition: 0.5s;
+        transform: translate(-50%);
+        }
+        .navbar a:hover{
+        color: blue;
+        font-size: 1.3rem;
+        transition: all 0.8 ease;
+        }
+
+        .navbar a:hover::after{
+            width: 100%;
         }
 
         .area-logo{
@@ -88,6 +116,7 @@
             text-decoration: none;
             border-radius: 10px;
             border: #6482AD 2px solid; 
+            
         }
     </style>
 </head>
@@ -102,9 +131,9 @@
             <div class="nav-item">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Feature</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Reviews</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Certificate</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         
@@ -114,6 +143,7 @@
             <div class="text-tittle">
 
                 <h1>Welcome to my sideof my life</h1>
+                <br>
                 <p>Web Developer - Full Stack Developer</p>
             </div>
             <div class="button-area">
