@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background:linear-gradient(to top left, #7C00FE, #FF8F00, #921A40) ;
+            background-size: 200%;
+            animation: gradient 10s  infinite alternate;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .container{
+            width: 40%;
+           
+            /*background-color: #fff;*/
+        }
+        fieldset{
+            background-color: azure;
+            border: none;
+            border-radius: 16px;
+            padding: 10px;
+
+        }
+        legend{
+            background-color: #0088cc;
+            padding: 16px 48px;
+            border-radius: 100px;
+            color: #ffffff;
+            margin-left: 50px;
+            margin-bottom: 24px
+        }
+        .form-grup{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 8px 24px;
+            box-sizing: border-box;
+        }
+
+        input, label, button{
+            padding: 8px;
+        }
+        
+
+        .btn-login{
+            background-color: #0088cc;
+            border: none;
+            border-radius: 16px;
+            color: #fff;
+            padding: 16px 0;
+            margin-top: 16px;
+        }
+        .btn-login:hover{
+            background-color: #053751;
+            cursor: pointer;
+        }
+
+        /*animasi gradient*/
+
+        @keyframes gradient {
+            0%{
+                background-position: center;
+            }
+            25%{
+                background-position: right;
+                background-size: 250%;
+            }
+            50%{
+                background-position: left;
+                background-size: 350%;
+            }
+            75%{
+                background-position: bottom;
+                background-size: 200%;
+            }
+            100%{
+                background-position: center;
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+            <legend>Login Form</legend>
+
+            <form action="#" method="post">
+                <div class="form-grup">
+                    <label >Nama Lengkap</label>
+                    <input required type="text">
+                </div>
+                <div class="form-grup">
+                    <label >Username</label>
+                    <input required type="text">
+                </div>
+                <div class="form-grup">
+                    <label >Email</label>
+                    <input required type="email">
+                </div>
+                <div class="form-grup">
+                    <label >Password</label>
+                    <input required type="password">
+                </div>
+                <div class="form-grup">
+                    <button type="submit" class="btn-login">Login</button>
+                </div>
+            </form>
+        </fieldset>
+
+    </div>
+    
+</body>
+</html>
